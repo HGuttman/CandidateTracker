@@ -8,7 +8,7 @@ const Confirmed = () => {
    
     useEffect(() => {
         const getConfirmed = async () => {
-            const {data} = await axios.get('/api/candidates/getconfrimed');
+            const {data} = await axios.get('/api/candidates/getconfirmed');
             SetConfirmed(data);
         }
         getConfirmed();

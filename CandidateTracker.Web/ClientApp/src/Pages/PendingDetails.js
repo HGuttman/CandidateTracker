@@ -8,7 +8,7 @@ const PendingDetails = () =>{
     const ctx = useContext(Context);
 
     const params = useParams();
-    const id = params;
+    const {id }= params;
     const [Candidate, SetCandidate] = useState({firstName:'', lastName:'', phoneNumber:'', status:'', notes:''});
     
     useEffect(() => {
